@@ -63,13 +63,73 @@ body
 	text-align: left;
 }
 
-.content-wrapper{
-    width: 100%;
+.overlay 
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
 }
 
-.content-wrapper img{
+.content-wrapper
+{
+  position: relative;
+  width: 100%;
+}
+
+.content-wrapper img
+{
+	display: block;
+  	max-height: 800px;
+  	width: auto;
+  	height: auto;
     width: 100%;
     border: black 1px solid;
+}
+
+.overlay 
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.content-wrapper:hover .overlay 
+{
+  opacity: 1;
+}
+
+.text 
+{
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-family: 'Fjalla One', sans-serif;
+}
+
+@media(max-width: 700px)
+{
+	.text
+	{
+		font-size: 20px;
+	}
 }
 
 .bottomGrid
