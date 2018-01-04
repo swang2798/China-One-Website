@@ -1,5 +1,5 @@
 # chinaone
 Website for my family restaurant 
 
-// Link
+Link: 
 chinaoneschaefer.com
